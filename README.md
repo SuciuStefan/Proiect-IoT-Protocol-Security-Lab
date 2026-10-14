@@ -7,7 +7,7 @@ Detalii despre temă, unelte și reguli: vezi `Agents.md`.
 
 ## Status curent
 
-**Faza activă:** 0 - Mediu
+**Faza activă:** 2 - Mediu
 **Ultimul pas terminat:** Windows 11 confirmat pe laptop
 
 ## Arhitectură
@@ -76,13 +76,14 @@ Telefon (Termux + Python) --> Laptop: Mosquitto (broker) --> Node-RED (vizualiza
 
 ## Jurnal
 
-| Data | Ce s-a făcut |
-|------|--------------|
+| Data       | Ce s-a făcut |
+|------------|--------------|
 | 2026-10-09 | Plan stabilit, repo creat, Windows 11 confirmat |
+| 2026-10-14 | Telefon -> Mosquitto -> Node-RED funcțional, flow exportat, commit Faza 1 |
 
 ## Structura folderului
 
-```
+```text
 iot-securitate/
 ├── broker/     # mosquitto.conf, acl, passwd (passwd NU în Git)
 ├── phone/      # scripturi Termux (publisher MQTT/HTTP/CoAP)
