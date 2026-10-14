@@ -25,21 +25,21 @@ Telefon (Termux + Python) --> Laptop: Mosquitto (broker) --> Node-RED (vizualiza
 - [x] Sistem de operare laptop: Windows 11
 - [x] Laptop: Mosquitto instalat
 - [x] Laptop: Wireshark instalat (cu Npcap)
-- [ ] Laptop: Node.js + Node-RED instalate
+- [x] Laptop: Node.js + Node-RED instalate
 - [x] Telefon: Termux + Termux:API (din F-Droid)
 - [x] Telefon: `pkg install python` în Termux
 - [x] Telefon și laptop în același Wi-Fi
 - [x] `ping` telefon -> laptop reușit (dacă pică: "client isolation" în router)
-- [ ] Windows Firewall: regulă de intrare pentru portul 1883
+- [x] Windows Firewall: regulă de intrare pentru portul 1883
 
 ### Faza 1 - Prototip fără securitate
 
 - [x] `broker/mosquitto.conf` cu listener pe 1883 și `allow_anonymous true` (DOAR pentru test)
 - [x] Test local: `mosquitto_pub` / `mosquitto_sub` pe laptop
-- [ ] Test de pe telefon spre laptop (publish din Termux)
-- [ ] `phone/mqtt_publisher.py` citește un senzor (`termux-sensor`) și publică
-- [ ] Node-RED primește din MQTT și afișează valorile
-- [ ] Commit în Git
+- [x] Test de pe telefon spre laptop (publish din Termux)
+- [x] `phone/mqtt_publisher.py` citește un senzor (`termux-sensor`) și publică
+- [x] Node-RED primește din MQTT și afișează valorile
+- [x] Commit în Git
 
 ### Faza 2 - HTTP, CoAP, măsurători
 
