@@ -45,15 +45,15 @@ Telefon (Termux + Python) --> Laptop: Mosquitto (broker) --> Node-RED (vizualiza
 
 - [x] Metodologie fixată în `results/metodologie.md` (payload JSON, număr mesaje, rată, QoS)
 - [x] Server HTTP pe laptop
-- [] Server CoAP pe laptop (ex. aiocoap)
-- [ ] `phone/http_publisher.py`
-- [ ] `phone/coap_publisher.py`
-- [ ] Captură Wireshark MQTT -> `captures/`
-- [ ] Captură Wireshark HTTP -> `captures/`
-- [ ] Captură Wireshark CoAP -> `captures/`
-- [ ] Tabel RTT (medie, min, max) per protocol -> `results/`
-- [ ] Tabel overhead (octeți pe fir / octeți payload) per protocol -> `results/`
-- [ ] Tabel pierderi de pachete per protocol -> `results/`
+- [x] Server CoAP pe laptop (ex. aiocoap)
+- [x] `phone/http_publisher.py`
+- [x] `phone/coap_publisher.py`
+- [x] Captură Wireshark MQTT -> `captures/`
+- [x] Captură Wireshark HTTP -> `captures/`
+- [x] Captură Wireshark CoAP -> `captures/`
+- [x] Tabel RTT (medie, min, max) per protocol -> `results/`
+- [x] Tabel overhead (octeți pe fir / octeți payload) per protocol -> `results/`
+- [x] Tabel pierderi de pachete per protocol -> `results/`
 
 ### Faza 3 - Securitate
 

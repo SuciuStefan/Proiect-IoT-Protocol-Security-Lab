@@ -1,0 +1,4 @@
+Protocol,Rulare,Pachete_Regim_Stabil,Octeti_Payload,Octeti_Protocol_L7,Octeti_IP_Total,Overhead_Protocol_x,Overhead_Fir_Complet_x,Retransmisii_Retea,Pachete_Handshake_Fin,Pachete_KeepAlive
+MQTT,1,607,8173,12775,44339,0.56,4.43,0,8,8
+HTTP,1,1023,8260,71523,124911,7.66,14.12,16,5,0
+COAP,1,400,8201,12001,23201,0.46,1.83,0,0,0

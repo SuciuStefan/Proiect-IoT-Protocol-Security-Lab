@@ -1,0 +1,4 @@
+Protocol,Rulare,Trimise_masurate,Primite_masurate,Pierdute_aplicatie,Pierdere_proc
+MQTT,1,200,200,0,0.00%
+HTTP,1,200,200,0,0.00%
+COAP,1,200,200,0,0.00%
