@@ -13,6 +13,9 @@ rețea, cu aceleași date. Toate valorile din raport vin din măsurători
 - Limitare: traficul nu trece printr-un router separat, deci RTT-ul poate fi
   mai mic și mai variabil decât pe un Wi-Fi obișnuit. Rezultatele sunt
   valabile pentru această topologie.
+- Telefon (pachete Python): paho-mqtt 2.1.0, aiocoap 0.4.17, requests 2.34.2
+- Laptop: Wireshark 4.6.9 , Npcap 1.88, Node.js v25.2.1, Node-RED v5.0.8
+- Hotspot: banda <2.4 SI 5 GHz>
 - Condiții: date mobile oprite (dacă hotspot-ul permite), `termux-wake-lock`,
   ecran pornit, aplicații de fundal închise, distanță fixă telefon-laptop
   ~25cm, fără alte dispozitive pe hotspot.
@@ -38,7 +41,7 @@ rețea, cu aceleași date. Toate valorile din raport vin din măsurători
 
 | Protocol | Transport | Conexiune | Confirmare |
 | --- | --- | --- | --- |
-| MQTT | TCP 1883 | persistentă, keep-alive <s> | QoS 1 (PUBACK) |
+| MQTT | TCP 1883 | persistentă, keep-alive 60s | QoS 1 (PUBACK) |
 | HTTP | TCP 8000 | persistentă (keep-alive, o sesiune) | răspuns 204 |
 | CoAP | UDP 5683 | fără conexiune | CON (Confirmable), ACK |
 
@@ -78,7 +81,9 @@ rețea, cu aceleași date. Toate valorile din raport vin din măsurători
 
 - Mesaje trimise (telefon) vs. mesaje primite (log server, după `seq`).
 - Pe LAN/hotspot se așteaptă ~0%. Se raportează valoarea măsurată, fără ajustări.
-- (Opțional) scenariu cu pierdere indusă controlat, declarat explicit în raport.
+- Pierderea la nivel de rețea (retransmisii în captură) se raportează separat
+  de pierderea la nivel de aplicație (seq lipsă la server). Pe TCP (MQTT/HTTP)
+  pierderea la nivel de aplicație e aproape sigur 0 prin construcție.
 
 ## 8. Reproductibilitate
 

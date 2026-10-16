@@ -43,9 +43,9 @@ Telefon (Termux + Python) --> Laptop: Mosquitto (broker) --> Node-RED (vizualiza
 
 ### Faza 2 - HTTP, CoAP, măsurători
 
-- [ ] Metodologie fixată în `results/metodologie.md` (payload JSON, număr mesaje, rată, QoS)
-- [ ] Server HTTP pe laptop
-- [ ] Server CoAP pe laptop (ex. aiocoap)
+- [x] Metodologie fixată în `results/metodologie.md` (payload JSON, număr mesaje, rată, QoS)
+- [x] Server HTTP pe laptop
+- [] Server CoAP pe laptop (ex. aiocoap)
 - [ ] `phone/http_publisher.py`
 - [ ] `phone/coap_publisher.py`
 - [ ] Captură Wireshark MQTT -> `captures/`
