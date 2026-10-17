@@ -5,11 +5,6 @@ Computer Networks, anul 4. Telefon Android ca nod IoT: comparație MQTT / HTTP /
 Detalii despre temă, unelte și reguli: vezi `Agents.md`.
 **Acest fișier este sursa de adevăr pentru status.** Bifezi `[x]` pe măsură ce termini un pas.
 
-## Status curent
-
-**Faza activă:** 2 - Mediu
-**Ultimul pas terminat:** Windows 11 confirmat pe laptop
-
 ## Arhitectură
 
 ```text
@@ -57,15 +52,15 @@ Telefon (Termux + Python) --> Laptop: Mosquitto (broker) --> Node-RED (vizualiza
 
 ### Faza 3 - Securitate
 
-- [ ] Captură MQTT în clar: date vizibile în Wireshark (dovadă)
-- [ ] Certificate generate (CA + server TLS)
-- [ ] Mosquitto cu TLS pe 8883
-- [ ] Autentificare: `allow_anonymous false` + fișier `passwd`
-- [ ] ACL: telefonul poate doar publica pe topicul lui
-- [ ] Captură MQTT cu TLS: conținut ilizibil (dovadă)
-- [ ] Atac pe rețeaua proprie: subscriber neautorizat pe `#` reușește fără ACL
-- [ ] Același atac eșuează cu autentificare + ACL
-- [ ] Verificat: `passwd`, `*.key`, parole reale NU sunt în Git (`.gitignore`)
+- [x] Captură MQTT în clar: date vizibile în Wireshark (dovadă)
+- [x] Certificate generate (CA + server TLS)
+- [x] Mosquitto cu TLS pe 8883
+- [x] Autentificare: `allow_anonymous false` + fișier `passwd`
+- [x] ACL: telefonul poate doar publica pe topicul lui
+- [x] Captură MQTT cu TLS: conținut ilizibil (dovadă)
+- [x] Atac pe rețeaua proprie: subscriber neautorizat pe `#` reușește fără ACL
+- [x] Același atac eșuează cu autentificare + ACL
+- [x] Verificat: `passwd`, `*.key`, parole reale NU sunt în Git (`.gitignore`)
 
 ### Faza 4 - Documentație și demo
 
@@ -76,10 +71,11 @@ Telefon (Termux + Python) --> Laptop: Mosquitto (broker) --> Node-RED (vizualiza
 
 ## Jurnal
 
-| Data       | Ce s-a făcut |
-|------------|--------------|
+| Data       | Ce s-a făcut                                      |
+|------------|---------------------------------------------------|
 | 2026-10-09 | Plan stabilit, repo creat, Windows 11 confirmat |
 | 2026-10-14 | Telefon -> Mosquitto -> Node-RED funcțional, flow exportat, commit Faza 1 |
+| 2026-10-16 | Facut export la date si calculat rtt,overheadul si pierderile, commit Faza 2 |
 
 ## Structura folderului
 

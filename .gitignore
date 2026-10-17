@@ -1,3 +1,7 @@
-   flows_cred.json
-   broker/passwd
-   *.key
+flows_cred.json
+broker/passwd
+broker/certs/
+*.key
+*.crt
+*.csr
+*.srl

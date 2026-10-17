@@ -1,0 +1,7 @@
+# Telefonul poate DOAR publica pe topicul lui (nu poate citi nimic)
+user telefon
+topic write telefon/accel
+
+# Receptorul de pe laptop poate DOAR citi topicul telefonului
+user receptor
+topic read telefon/accel
